@@ -9,13 +9,21 @@
 <body>
     <div class="quizCon">
         <h1>Interactive Quiz</h1>
-        <div id="quesCon"></div>
-        <div class="buttons">
-            <button id="prev">Previous</button>
-            <button id="next">Next</button>
-            <button id="submit">Submit</button>
+        <div id="quesCon">
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-grid"></div>
         </div>
-        <div id="result" class="hidden"></div>
+        <div class="buttons">
+            <button id="previous" class="nav-btn hidden">Previous</button>
+            <button id="next" class="nav-btn">Next</button>
+            <button id="submit" class="nav-btn hidden">Submit</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Your Score:</h2>
+            <p id="score"></p>
+            <div id="correctAns"></div>
+
+        </div>
     </div>
     <script src="quizLogic.js"></script>
 </body>
