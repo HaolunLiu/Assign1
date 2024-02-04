@@ -13,7 +13,7 @@ body{
     border-radius: 50px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     width: 70%;
-    height: 40%;
+    height: 50%;
     max-width: 1000px;
     padding: 50px;
     margin: 100px;
@@ -27,24 +27,47 @@ h1{
 
 #quesCon{
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.btn-grid{
+.btn-grid button{
+    background-color: aqua;
+    color:black;
     display: grid;
+    cursor: pointer;
+    margin-bottom: 10px;
+    align-items: center;
+    min-width: 100px;
 }
 
 button{
     padding: 12px;
-    background-color: cornflowerblue;
-    color: rgb(0, 0, 0);
     border-radius: 20px;
-}
+    align-items: center;
+} 
 
 button:hover{
-    background-color: cadetblue;
+    opacity: 0.6;
 }
 
+button.active{
+    background-color:cornflowerblue;
+}
+
+button.correct{
+    background-color: lightgreen;
+}
+
+button.wrong{
+    background-color: tomato;
+}
+
+
 .nav-btn{
+    background-color: cornflowerblue;
+    color: black;
     width: 20%;
 }
 
@@ -52,15 +75,45 @@ button:hover{
     display: none;
 }
 
+
 #result{
     text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#submit.restart {
+    background-color:teal; 
+}
+
+
+#score {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 #correctAns{
-    text-align: right;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 10px;
 }
 
+@media (max-width: 600px) {
+    .quizCon {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btn-grid button {
+        padding: 15px; 
+    }
+
+    .nav-btn {
+        width: 100%; 
+    }
+}
 
 
 
