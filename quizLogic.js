@@ -91,6 +91,7 @@ function showResults() {
         }
     });
     scoreEle.innerText = `Your Score: ${score} out of ${quizQ.length}`;
+    
     correctAnsEle.innerHTML = quizQ.map((q, index) => 
         `Q${index + 1}: ${q.answers[q.correctAnswer]}`).join('<br>');
     result.classList.remove('hidden');
