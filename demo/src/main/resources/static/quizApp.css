@@ -1,0 +1,139 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: aqua;
+    display: flex;
+    height: 100vh;
+    margin: 10;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, aqua, lightblue);
+}
+
+
+
+.quizCon{
+    background-color: bisque;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 60%;
+    max-width: 1000px;
+    padding: 50px;
+    margin: 100px;
+    text-align: center;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px grey;
+    text-align: center;
+    color: rgb(40, 140, 168);
+}
+#question {
+    font-size: 20px;
+    font-weight: bold;
+    color: black; 
+    
+}
+#quesCon{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#answer-buttons {
+    margin-top: 25px;
+}
+
+.btn-grid button{
+    background-color: aqua;
+    color:black;
+    display: grid;
+    cursor: pointer;
+    margin-bottom: 10px;
+    align-items: center;
+    min-width: 100px;
+}
+
+button{
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    align-items: center;
+    transition: background-color 0.3s ease;
+} 
+
+button:hover{
+    opacity: 0.6;
+    border-color: crimson;
+    background-color: lightseagreen;
+    color: white;
+}
+
+button.active{
+    background-color:cornflowerblue;
+}
+
+button.correct{
+    background-color: lightgreen;
+}
+
+button.wrong{
+    background-color: tomato;
+}
+
+
+.nav-btn{
+    background-color: cornflowerblue;
+    color: black;
+    width: 20%;
+}
+
+.hidden{
+    display: none;
+}
+
+
+#result{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#submit.restart {
+    background-color:teal; 
+}
+
+
+#score {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#correctAns{
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .quizCon {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btn-grid button {
+        padding: 15px; 
+    }
+
+    .nav-btn {
+        width: 100%; 
+    }
+}
+
+
+

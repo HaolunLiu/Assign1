@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="quizApp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Interactive Quiz</title>
+</head>
+<body>
+    <div class="quizCon">
+        <h1>Interactive Quiz</h1>
+        <div id="quesCon">
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-grid"></div>
+        </div>
+        <div class="buttons">
+            <button id="previous" class="nav-btn hidden">Previous</button>
+            <button id="next" class="nav-btn">Next</button>
+            <button id="submit" class="nav-btn hidden">Submit</button>
+        </div>
+        <div id="result" class="hidden">
+            <h2>Your Score:</h2>
+            <p id="score"></p>
+            <div id="correctAns"></div>
+
+        </div>
+    </div>
+    <script src="quizLogic.js"></script>
+</body>
+</html>
